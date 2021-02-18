@@ -1,0 +1,40 @@
+\documentclass
+[
+    12pt, 
+    a4paper
+]
+{thesis}
+
+\exposeTitle{Title of your bachelor thesis}
+
+\exposeType{Bachelor Thesis}
+\name{Max Mustermann}
+\email{max.mustermann@code.berlin}
+\studyProgram{Bachelor of Science (B.Sc.) - Software Engineering}
+\semester{6. semester}
+\enrollmentNumber{12.34.567}
+\supervisorOne{Alan Turing}
+\supervisorTwo{Ada Lovelace}
+
+\begin{document}
+\pagenumbering{Roman} 
+\maketitle
+\newpage
+\input{declaration/declaration}
+\newpage
+\input{abstract/abstract}
+\newpage
+\tableofcontents
+\listoffigures
+\listoftables
+\newpage
+
+\pagenumbering{arabic} 
+
+\input{sections/introduction}
+\input{sections/secondSection}
+\input{sections/thirdSection}
+
+
+\printbibliography
+\end{document}
