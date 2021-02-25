@@ -5,21 +5,32 @@
 ]
 {thesis}
 
+
 \exposeTitle{Title of your bachelor thesis}
 
 \exposeType{Bachelor Thesis}
 \name{Max Mustermann}
 \email{max.mustermann@code.berlin}
 \studyProgram{Bachelor of Science (B.Sc.) - Software Engineering}
-\semester{6. semester}
+\semester{Spring Semester 2021}
 \enrollmentNumber{12.34.567}
 \supervisorOne{Alan Turing}
 \supervisorTwo{Ada Lovelace}
 
+
 \begin{document}
-\pagenumbering{Roman} 
+
+% title page
 \maketitle
+\thispagestyle{empty}
 \newpage
+
+%empty page
+\null
+\thispagestyle{empty}
+\newpage
+
+\pagenumbering{Roman} 
 \input{declaration/declaration}
 \newpage
 \input{abstract/abstract}
@@ -32,8 +43,8 @@
 \pagenumbering{arabic} 
 
 \input{sections/introduction}
-\input{sections/secondSection}
-\input{sections/thirdSection}
+\input{sections/body}
+\input{sections/conclusion}
 
 
 \printbibliography
